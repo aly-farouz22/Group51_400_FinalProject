@@ -62,8 +62,9 @@ plugins {
 }
 
 java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(11))
+    toolchain 7
+        languageVersion.set(JavaLanguageVersion.of(17))
+	
     }
 }
 
