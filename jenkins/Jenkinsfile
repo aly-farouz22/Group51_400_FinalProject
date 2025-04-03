@@ -69,7 +69,7 @@ pipeline {
     //     sh './gradlew checkQualityGate'
     //   }
     // }
-
+/*
     // Deploy to test environment
     stage('Deploy to Test') {
       steps {
@@ -159,6 +159,6 @@ pipeline {
         sh 'sleep 5'
       }
     }
-
+*/
   }
 }
