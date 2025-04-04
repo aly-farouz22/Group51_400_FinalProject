@@ -131,14 +131,14 @@ pipeline {
         sh './gradlew runPerfTests'
       }
     }
-
+*/
     // Mutation testing to assess test coverage quality
     stage('Mutation Tests') {
       steps {
         sh './gradlew pitest'
       }
     }
-*/
+
     // Javadoc generation
     stage('Build Documentation') {
       steps {
