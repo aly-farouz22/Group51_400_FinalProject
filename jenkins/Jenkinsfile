@@ -138,14 +138,14 @@ pipeline {
         sh './gradlew pitest'
       }
     }
-
+*/
     // Javadoc generation
     stage('Build Documentation') {
       steps {
         sh './gradlew javadoc'
       }
     }
-
+/*
     // Collect ZAP security report
     stage('Collect Zap Security Report') {
       steps {
