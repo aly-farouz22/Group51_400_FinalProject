@@ -117,7 +117,7 @@ pipeline {
         }
       }
     }
-
+*/
     // Security dependency analysis using OWASP
     stage('Security: Dependency Analysis') {
       steps {
@@ -131,7 +131,7 @@ pipeline {
         sh './gradlew runPerfTests'
       }
     }
-
+/*
     // Mutation testing to assess test coverage quality
     stage('Mutation Tests') {
       steps {
