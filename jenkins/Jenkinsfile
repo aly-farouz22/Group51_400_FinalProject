@@ -105,7 +105,7 @@ pipeline {
         }
       }
     }
-*/
+
     // Detailed UI tests
     stage('UI Tests') {
       steps {
@@ -117,7 +117,7 @@ pipeline {
         }
       }
     }
-/*
+
     // Security dependency analysis using OWASP
     stage('Security: Dependency Analysis') {
       steps {
@@ -153,13 +153,13 @@ pipeline {
         sh 'curl http://zap/OTHER/core/other/htmlreport --proxy localhost:9888 > build/reports/zap/zap_report.html'
       }
     }
-
+*/
     // Final step simulating a production deploy
     stage('Deploy to Prod') {
       steps {
         sh 'sleep 5'
       }
     }
-*/
+
   }
 }
