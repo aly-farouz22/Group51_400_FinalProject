@@ -105,7 +105,7 @@ pipeline {
         }
       }
     }
-
+*/
     // Detailed UI tests
     stage('UI Tests') {
       steps {
@@ -117,7 +117,7 @@ pipeline {
         }
       }
     }
-
+/*
     // Security dependency analysis using OWASP
     stage('Security: Dependency Analysis') {
       steps {
