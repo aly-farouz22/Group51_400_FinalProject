@@ -80,7 +80,7 @@ pipeline {
         sh 'curl http://zap/JSON/core/action/newSession -s --proxy localhost:9888'
       }
     }
-
+*/
     // API test automation
     stage('API Tests') {
       steps {
@@ -92,7 +92,7 @@ pipeline {
         }
       }
     }
-
+/*
     // UI Behavior Driven Development tests
     stage('UI BDD Tests') {
       steps {
