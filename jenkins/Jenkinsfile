@@ -125,12 +125,29 @@ pipeline {
       }
     }
 
+    // // Performance testing with JMeter
+    // stage('Performance Tests') {
+    //   steps {
+    //     sh './gradlew runPerfTests'
+    //   }
+    // }
     // Performance testing with JMeter
-    stage('Performance Tests') {
-      steps {
-        sh './gradlew runPerfTests'
+      stage('Performance Tests') {
+        steps {
+          sh '''
+            # Download and extract JMeter locally (no install required)
+            curl -s https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.2.tgz -o jmeter.tgz
+            tar -xzf jmeter.tgz
+      
+            # Add local JMeter bin to PATH for this shell session
+            export PATH=$PWD/apache-jmeter-5.6.2/bin:$PATH
+      
+            # Run your existing Gradle performance task
+            ./gradlew runPerfTests
+          '''
+        }
       }
-    }
+
 
     // Mutation testing to assess test coverage quality
     stage('Mutation Tests') {
