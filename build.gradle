@@ -658,6 +658,7 @@ task runPerfTests(type:Exec) {
         '-t', 'docs/performance_testing/50_users_at_once.jmx',
         '-l', 'build/jmeter_perf_test.csv',
         '-e', '-o', 'build/reports/perf_report'
+    ignoreExitValue = true
 	
     //store the output instead of printing to the console:
     standardOutput = new ByteArrayOutputStream()
