@@ -136,7 +136,7 @@ pipeline {
         steps {
           sh '''
             # Download and extract JMeter locally (no install required)
-            curl -s https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.2.tgz -o jmeter.tgz
+            curl -s https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.2.tgz
             tar -xzf jmeter.tgz
       
             # Add local JMeter bin to PATH for this shell session
