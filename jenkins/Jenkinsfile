@@ -124,14 +124,14 @@ pipeline {
         sh './gradlew dependencyCheckAnalyze'
       }
     }
-/*
+
     // Performance testing with JMeter
     stage('Performance Tests') {
       steps {
         sh './gradlew runPerfTests'
       }
     }
-*/
+
     // Mutation testing to assess test coverage quality
     stage('Mutation Tests') {
       steps {
