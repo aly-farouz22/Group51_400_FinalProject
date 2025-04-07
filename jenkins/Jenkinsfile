@@ -32,7 +32,7 @@ pipeline {
       post {
         always {
           catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-          junit 'build/test-results/test/*.xml'
+            junit 'build/test-results/test/*.xml'
         }
       }
     }
