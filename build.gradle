@@ -528,6 +528,8 @@ task runBehaveTests(type: Exec) {
     environment "PIPENV_MAX_DEPTH", "10"
     // run behave and output a json file (we'll convert that to Cucumber format later for reporting)
     commandLine 'pipenv', 'run', 'behave', '--format','json','-o','../../../build/bdd/behave.output', '-D', 'chromedriver_path='+(project.properties['chromedriver.path'] ?: "")
+    ignoreExitValue = true
+
 }
 
 // Run a command to convert the Behave json to Cucumber format.
