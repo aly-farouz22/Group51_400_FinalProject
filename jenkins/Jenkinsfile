@@ -61,14 +61,14 @@ pipeline {
       }
     }
     
-    // // Static code analysis
-    // stage('Static Analysis') {
-    //   steps {
-    //     sh './gradlew sonarqube'
-    //     sleep 5
-    //     sh './gradlew checkQualityGate'
-    //   }
-    // }
+    // Static code analysis
+    stage('Static Analysis') {
+      steps {
+        sh './gradlew sonarqube'
+        sleep 5
+        sh './gradlew checkQualityGate'
+      }
+    }
 
 /*
     // Deploy to test environment
