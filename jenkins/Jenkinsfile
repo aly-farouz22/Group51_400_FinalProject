@@ -16,6 +16,7 @@ pipeline {
   stages {
 
     // Build the binary
+    // test
     stage('Build') {
       steps {
         //  Confirm Java version being used
