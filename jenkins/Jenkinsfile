@@ -94,6 +94,7 @@ pipeline {
     }
 
     // UI Behavior Driven Development tests
+    //test test test 
     stage('UI BDD Tests') {
       steps {
         sh './gradlew runBehaveTests'
