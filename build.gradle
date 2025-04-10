@@ -13,7 +13,7 @@ buildscript {
 plugins {
     id 'war'
 
-    // gretty is a gradle plugin to make it easy to run a server and hotswap code at runtime.
+    // gretty is a gradle plugin to make it easy to run a server and hotswap code at runtime ...
     // https://plugins.gradle.org/plugin/org.gretty
     id 'org.gretty' version '3.1.5'
 
